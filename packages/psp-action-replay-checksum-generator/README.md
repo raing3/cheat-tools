@@ -7,7 +7,7 @@ custom generated cheat file.
 
 ## Installation
 ```
-npm install -g @uuddlrlrbas/psp-action-replay-checksum-generator
+npm install @uuddlrlrbas/psp-action-replay-checksum-generator
 ```
 
 ## Usage
