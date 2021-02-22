@@ -1,0 +1,37 @@
+{
+  "name": "@uuddlrlrbas/psp-action-replay-checksum-generator",
+  "version": "0.2.0",
+  "description": "CLI",
+  "author": "Richard Ainger <raing3@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raing3/cheat-tools.git",
+    "directory": "packages/psp-action-replay-hash-generator"
+  },
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && tsc",
+    "build:watch": "npm run clean && tsc -w",
+    "lint": "eslint --ext .ts ./src",
+    "lint:fix": "eslint --ext .ts ./src --fix",
+    "prepack": "npm run build"
+  },
+  "bin": {
+    "local-api-gateway": "dist/cli.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@raing3/eslint-config": "^0.2.3",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.18.0",
+    "jest": "^26.6.3",
+    "rimraf": "^3.0.2",
+    "ts-jest": "^26.5.1",
+    "typescript": "^3.9.7"
+  }
+}
